@@ -1,17 +1,19 @@
 console.log('🚀Hello world from JavaScript🚀')
-//key: value
-let obj = {
-    name: 'Mar',
-    address: 'TPHCM',
-    email: '',
-    gender: ''
-};
+let a = {
+    name: 'Kay',
+    age: 18,
 
+}; //key:value
 
-let b = 'address';
+console.log(`check data object: `, a);
+console.log(`my name's : `, a.name);
 
-// obj[b] = 'Mar'
-obj.name = 'HCM'
-
-console.log('what is your name ? ', `My name 's : `, obj['name'], obj)
-console.log('Where are you from ? ', `I'm from : `, obj['address'])
+//arr = [item1, item2, item3]
+let b = ['MU', 'Chelsea', "Liver"];
+console.log('typof b: ', typeof b, b);
+console.log('first item: ', b[0], ' second item: ', b[1]);
+let family = [
+    { name: 'Kay', age: 18 },
+    { name: 'Kendalljenner', age: 18 },
+];
+console.log('My Family: ', family);
