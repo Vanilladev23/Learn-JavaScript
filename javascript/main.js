@@ -1,9 +1,17 @@
 console.log('🚀Hello world from JavaScript🚀')
-let a = 5;
-let b = 10;
-console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
-console.log('Fifteen is ' + a + b + ' and not ' + (2 * a + b) + '.');
+//key: value
+let obj = {
+    name: 'Mar',
+    address: 'TPHCM',
+    email: '',
+    gender: ''
+};
 
-// url: '/hoidanit/5
-console.log(`Hoi dan it check strings: a = ${a} b= ${b} a+b = ${a + b}`)
-console.log(`/hoidanit/${a}`)
+
+let b = 'address';
+
+// obj[b] = 'Mar'
+obj.name = 'HCM'
+
+console.log('what is your name ? ', `My name 's : `, obj['name'], obj)
+console.log('Where are you from ? ', `I'm from : `, obj['address'])
