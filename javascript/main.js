@@ -1,19 +1,14 @@
-console.log('🚀Hello world from JavaScript🚀')
-let a = {
-    name: 'Kay',
-    age: 18,
+console.log('🚀Hello world from JavaScript🚀');
+let a = 5; // x <- y
+let b = '5';
 
-}; //key:value
+console.log(' compare a == b: ', 'a = ', a, ' b = ', a, ' result: ', a == b);
+console.log(' compare a === b: ', 'a = ', a, ' b = ', a, ' result: ', a === b);
+// === type, value convention
 
-console.log(`check data object: `, a);
-console.log(`my name's : `, a.name);
-
-//arr = [item1, item2, item3]
-let b = ['MU', 'Chelsea', "Liver"];
-console.log('typof b: ', typeof b, b);
-console.log('first item: ', b[0], ' second item: ', b[1]);
-let family = [
-    { name: 'Kay', age: 18 },
-    { name: 'Kendalljenner', age: 18 },
-];
-console.log('My Family: ', family);
+// Empty, null, undefined
+let c = null;
+console.log('check value: ', c);
+let d = '';
+d = 5;
+d = ['11'];
