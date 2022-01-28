@@ -1,4 +1,4 @@
-let x = 6, y = 7, z = 8;
-console.log('Test String', 'x =',x, 'y =',y, 'z =',z );
-
-console.log('Hello world from javascript');
+let a = `I'm a string`;
+let text = `We are the so-called "Vikings" from the north.`;
+console.log(text);
+console.log(a);
