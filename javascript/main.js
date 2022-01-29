@@ -1,14 +1,11 @@
 console.log('🚀Hello world from JavaScript🚀');
-let a = 5; // x <- y
-let b = '5';
+let arr = ['Mu', 'ManCity', 'Liver', 'Chelsea']
 
-console.log(' compare a == b: ', 'a = ', a, ' b = ', a, ' result: ', a == b);
-console.log(' compare a === b: ', 'a = ', a, ' b = ', a, ' result: ', a === b);
-// === type, value convention
+let i = 0;
 
-// Empty, null, undefined
-let c = null;
-console.log('check value: ', c);
-let d = '';
-d = 5;
-d = ['11'];
+for (let i = 0; i < arr.length; i++) {
+    console.log('check variable i = ', arr[i],)
+}
+
+//
+console.log('check value i: ', i)
