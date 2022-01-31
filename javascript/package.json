@@ -1,0 +1,26 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.2",
+    "prettier": "^2.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "beautiful": "lint-staged",
+    "lint-staged": {
+      "src/**/*.{js,json,scss}": "prettier --single-quote  --trailing-comma all --tab-width 4 --write"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
