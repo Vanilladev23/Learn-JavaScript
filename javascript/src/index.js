@@ -1,12 +1,25 @@
 console.log('🚀Hello world from JavaScript🚀');
-let arrTop4 = ['Man city', 'Liverpool', 'MU', 'Chelsea'];
-
-let i = 0;
-while (i < arrTop4.length) {
-  i++;
-  if (arrTop4[i] === 'Chelsea') {
-    console.log('Found it: ', arrTop4[i]);
-    continue;
-  }
-  console.log('>>> check i: ', i);
+let day = '';
+let a = 2;
+switch (a) {
+  case 0:
+  case 1:
+    day = 'Monday';
+    break;
+  case 2:
+    day = 'Tuesday';
+    break;
+  case 3:
+    day = 'Wednesday';
+    break;
+  case 4:
+    day = 'Thursday';
+    break;
+  case 5:
+    day = 'Friday';
+    break;
+  case 6:
+    day = 'Saturday';
 }
+
+console.log('check day: ', day, new Date().getDay());
