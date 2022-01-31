@@ -1,10 +1,9 @@
 console.log('🚀Hello world from JavaScript🚀');
-//global
-//block
-
-// console.log('value x: ', x)
-// let x = 5;
-
-for (let i = 0; i < 10; i++) {
-  console.log('>>> check value i: ', i);
+//input paramater
+function sum(a, b) {
+  return a + b;
 }
+
+let c = sum(10, 20);
+
+console.log('sum c ', c);
