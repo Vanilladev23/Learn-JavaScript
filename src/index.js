@@ -1,20 +1,21 @@
 console.log('🚀Hello world from JavaScript🚀');
-// // function sum(a, b) {
-//   return a + b;
-// }
-
-// arrow function
-let sum = (a, b) => {
-  return a + b;
+let sum = (a, b, callback) => {
+  let tong = a + b;
+  setTimeout(() => {
+    callback(tong);
+  }, 5000); // miliseconds
+  let i = 0;
+  let timer = setInterval(() => {
+    callback(tong);
+    i++;
+    if (i === 5) {
+      clearInterval(timer);
+    }
+  }, 1000);
 };
-console.log('check sum: ', sum(6, 9));
 
-let obj = {
-  name: 'Kay',
-  address: 'TPHCM',
-  getName: function () {
-    return this.name;
-  },
+let printSum = (message) => {
+  console.log('>> check sum: 6 + 9 = ', message);
 };
-console.log('>>> Get Name obj: ', obj.getName());
-// function vs method => reuse
+
+sum(6, 9, printSum);
