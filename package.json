@@ -2,7 +2,7 @@
   "name": "javascript",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "dependencies": {
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
