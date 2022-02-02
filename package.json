@@ -25,8 +25,7 @@
   },
   "scripts": {
     "lint": "eslint '**/*.js'",
-    "lint:fix": "prettier-eslint '**/*.js' --write",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:fix": "prettier-eslint '**/*.js' --write"
   },
   "author": "",
   "license": "ISC"

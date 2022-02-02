@@ -1,21 +1,18 @@
 console.log('🚀Hello world from JavaScript🚀');
-let sum = (a, b, callback) => {
-  let tong = a + b;
-  setTimeout(() => {
-    callback(tong);
-  }, 5000); // miliseconds
-  let i = 0;
-  let timer = setInterval(() => {
-    callback(tong);
-    i++;
-    if (i === 5) {
-      clearInterval(timer);
-    }
-  }, 1000);
-};
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let arr = [
+  { name: 'Eric', age: 25 },
+  { name: 'ABC', age: 29 },
+  { name: 'Monica', age: 25 },
+  { name: 'Ross', age: 24 },
+  { name: 'Hoi Dan IT', age: 35 },
+];
+//filter, find
 
-let printSum = (message) => {
-  console.log('>> check sum: 6 + 9 = ', message);
-};
+let filter = arr.find((item, index) => {
+  return item && item.age === 55;
+});
+
+console.log(filter);
 
 sum(6, 9, printSum);
