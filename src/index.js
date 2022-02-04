@@ -1,13 +1,16 @@
 console.log('🚀Hello world from JavaScript🚀');
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// for (let i = 0; i < arr.length; i++) {
-//     arr[i] = arr[i] * arr[i];
-// }
+var items = [
+  { name: 'Edward', value: 21 },
+  { name: 'Sharpe', value: 37 },
+  { name: 'And', value: 45 },
+  { name: 'The', value: -12 },
+  { name: 'Magnetic', value: 13 },
+  { name: 'Zeros', value: 37 },
+];
 
-let mapArr = arr.map((item, index) => {
-  return `<td>${item} - ${index}</td>`;
+// sort by value
+items.sort(function (a, b) {
+  return a.value - b.value;
 });
-
-console.log('check value arr', arr);
-console.log('check value mapArr', mapArr);
+console.log(items);
